@@ -17,6 +17,15 @@ const styles = StyleSheet.create({
     textAlign: "right",
     marginRight: 20,
     marginBottom: 10
+  },
+  footer: {
+    padding: 10,
+    backgroundColor: "#202020",
+    alignItems: "center"
+  },
+  footerText: {
+    color: "#fff",
+    fontSize: 16
   }
 });
 
@@ -104,6 +113,11 @@ export default class App extends React.Component {
               onPress={() => this.handleTap("equal")}
             />
           </Row>
+
+          {/* Footer */}
+          <View style={styles.footer}>
+            <Text style={styles.footerText}>Calc by Etisha</Text>
+          </View>
         </SafeAreaView>
       </View>
     );
